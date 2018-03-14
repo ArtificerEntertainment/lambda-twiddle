@@ -1,0 +1,38 @@
+{
+  "name": "lambda-twiddle",
+  "version": "1.0.1",
+  "description": "Simple interface for modifying lambda environment variables.",
+  "main": "src/index.js",
+  "scripts": {
+    "coverage": "nyc report --reporter=lcov",
+    "test": "nyc --all mocha --recursive ./test && npm run lint",
+    "lint": "eslint *.js src test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtificerEntertainment/lambda-twiddle.git"
+  },
+  "keywords": [
+    "lambda",
+    "environment",
+    "variable",
+    "envar",
+    "twiddle"
+  ],
+  "author": "Artificer Entertainment",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArtificerEntertainment/lambda-twiddle/issues"
+  },
+  "homepage": "https://github.com/ArtificerEntertainment/lambda-twiddle",
+  "peerDependencies": {
+    "aws-sdk": "^2.94.0"
+  },
+  "devDependencies": {
+    "aws-sdk": "2.94.0",
+    "eslint": "3.19.0",
+    "mocha": "3.3.0",
+    "nyc": "10.3.0",
+    "sinon": "2.2.0"
+  }
+}
